@@ -4,8 +4,7 @@ services:
         image: mysql
         ports: 
             - "3306:3306"
-        command: --default-authentication-plugin=mysql_native_password
-                 --init-file www/construcsur-app/BD/BDconstrucsurV2.sql   
+        command: --default-authentication-plugin=mysql_native_password  
         environment:
             MYSQL_DATABASE: construcsurV2
             MYSQL_PASSWORD: 4275
